@@ -4,18 +4,37 @@ The objects below have some syntax issues - try and fix them all!
 
 */
 
-var kitten = {
-    fur colour: "orange",
-    age "23"
+let kitten = {
+  name: "Mimi",
+  furColour: "orange",
+  age: "23 months",
+  wantsToPlay: true,
 };
 
-var laptop = 
-    brand: "Lenovo"
-    ram "5GB"
-}
+let laptop = {
+  brand: "Acer",
+  ram: "6GB",
+  hdd: "1TB",
+  size: "17in",
+  wifi: true,
+};
 
-var phone = {
-    operating system "iOS",
-    hasStylus: true,
-    megapixels 12
-    "batteryLife": "24 hours"
+let phone = {
+  operatingSystem: "iOS",
+  hasStylus: true,
+  megapixels: 12,
+  batteryLife: "24 hours",
+};
+
+let table = {
+  color: "blue",
+  material: "wood",
+  size: "120cm x 200cm",
+};
+
+let book = {
+  title: "Memoirs of a Geisha",
+  languge: "English",
+  genere: "Narrative",
+  pages: 560,
+};

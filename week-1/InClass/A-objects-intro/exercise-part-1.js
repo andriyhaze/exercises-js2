@@ -17,3 +17,13 @@ var car = {
 
 */
 
+let car = {
+  brand: "Honda",
+  model: "Jazz",
+  color: "Grey",
+  fuelType: "Petrol",
+  seatingCapacity: 5,
+  foldingSeats: true,
+};
+
+console.log(`The brand is ` + car["brand-of"]);
