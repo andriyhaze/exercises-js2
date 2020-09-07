@@ -3,11 +3,17 @@
 // Try to use both methods shown above to achieve this
 
 const studentGrades = {
-    tom: 20,
-    george: 17,
-    abdul: 19,
-  };
-  
-  // Prints
-  // TOM - 20
-  // ABDUL - 19
+  tom: 20,
+  george: 17,
+  abdul: 19,
+};
+
+for (let name in studentGrades) {
+  if (studentGrades[name] > 18) {
+    console.log(`${name}: ${studentGrades[name]}`);
+  }
+}
+
+// Prints
+// TOM - 20
+// ABDUL - 19

@@ -38,10 +38,11 @@ let travelDestinations = [
   destination4,
 ];
 
+console.log(travelDestinations.destinationName);
 /*
 DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
-*/
+
 function destination500(destination) {
   if (destination.distanceKms <= 500) {
     return destination.destinationName;
@@ -62,14 +63,24 @@ function moreThan300(destination) {
     return destination.destinationName;
   }
 }
+*/
 
-let destinationNamesWithin500Kms = travelDestinations.map(destination500);
+let destinationNamesWithin500Kms = travelDestinations
+  .filter((destination) => destination.distanceKms <= 500)
+  .map((destination) => destination.destinationName);
 
-let destinationNameReachableByFerry = travelDestinations.map(reachedByFerry);
+let destinationNameReachableByFerry = travelDestinations.find((destination) =>
+  destination.transportations.includes("ferry")
+).destinationName;
 
-let destinationNamesMoreThan300KmsAwayByTrain = travelDestinations.map(
-  moreThan300
-);
+let destinationNamesMoreThan300KmsAwayByTrain = travelDestinations
+  .filter(
+    (destination) =>
+      destination.transportations.includes("train") &&
+      destination.distanceKms > 300
+  )
+  .map((destination) => destination.destinationName);
+
 // Complete here (PRINT THE RESULT IN THE CONSOLE USING FOREACH)
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
